@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap");
+
+.home {
+  display: block;
+  margin: auto;
+  width: 50%;
+  position: relative;
+  top: 33vh;
+  text-align: center;
+  padding: 20px 40px 20px 40px;
+}
+
+.home button {
+  margin: 5px 20px 20px 20px;
+}
+
+.note {
+  font-size: 0.9em;
+}
+
+body {
+  /* font: 14px "Roboto", Roboto, sans-serif; */
+  font: 14px "Nunito", Nunito, sans-serif;
+  margin: 20px;
+  --square-size: 40px
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  position: relative;
+  top: 33vh;
+  text-align: center;
+  padding: 20px 40px 20px 40px;
+  justify-content: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  line-height: var(--square-size);
+  height: var(--square-size);
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: var(--square-size);
+  font: 20px "Nunito", Nunito, sans-serif;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  width: calc(var(--square-size) *3);
+}
+
+.game-info {
+  margin: auto;
+  padding: 2px 0px 2px 0px;
+}
